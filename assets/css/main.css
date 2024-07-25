@@ -3992,3 +3992,7 @@
     pointer-events: none;
 }
 
+.description {
+    text-align: justify;
+}
+
