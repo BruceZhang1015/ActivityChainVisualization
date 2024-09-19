@@ -36,6 +36,8 @@
 		display: block;
 	}
 
+	
+
 	body {
 		line-height: 1;
 	}
@@ -2031,6 +2033,8 @@
 		text-align: center;
 	}
 
+	
+
 	header p {
 		color: #999;
 		position: relative;
@@ -2945,10 +2949,10 @@
 	}
 
 	#header {
-		background: #444;
+		background: #2774ae;
 		color: #bbb;
 		cursor: default;
-		height: 3.25em;
+		height: 4.5em;
 		left: 0;
 		line-height: 3.25em;
 		position: fixed;
