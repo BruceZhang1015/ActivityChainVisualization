@@ -28,6 +28,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		scroll-behavior: smooth;
 	}
 
 	article, aside, details, figcaption, figure,
@@ -42,6 +43,19 @@
 	ol, ul {
 		list-style: none;
 	}
+
+	#nav ul {
+		list-style: none;
+		display: flex;
+		justify-content: flex-end;
+		gap: px; /* This spaces the items apart */
+	}
+
+	  
+	#nav ul li {
+		margin-right: 15px; /* If needed, adjust this value to control the spacing */
+	}
+
 
 	blockquote, q {
 		quotes: none;
