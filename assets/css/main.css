@@ -11,6 +11,8 @@
 
 /* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
 
+
+
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 	pre, a, abbr, acronym, address, big, cite,
@@ -36,6 +38,26 @@
 		display: block;
 	}
 
+	#header {
+		display: flex;
+		align-items: center; /* Vertically aligns content */
+		justify-content: space-between; /* Ensures even spacing between logo and nav */
+		padding: 10px 20px; /* Adjust padding as needed */
+	}
+
+	
+
+	#logo {
+		padding-left: 34px; 
+		box-sizing: border-box; 
+		width: 374.9px; 
+		height: auto; 
+		display: flex; /* Makes sure the anchor behaves like a block to vertically center the logo */
+		align-items: center;
+	}
+
+	
+
 	
 
 	body {
@@ -51,6 +73,8 @@
 		display: flex;
 		justify-content: flex-end;
 		gap: px; /* This spaces the items apart */
+		align-items: center;
+
 	}
 
 	  
@@ -138,7 +162,7 @@
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		
 		color: #e89980;
 		text-decoration: none;
 	}
@@ -2952,7 +2976,7 @@
 		background: #2774ae;
 		color: #bbb;
 		cursor: default;
-		height: 4.5em;
+		height: 4em;
 		left: 0;
 		line-height: 3.25em;
 		position: fixed;
