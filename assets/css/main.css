@@ -2973,8 +2973,8 @@
 	}
 
 	#header {
-		background: #2774ae;
-		color: #bbb;
+		background-color: #2774ae;
+		
 		cursor: default;
 		height: 4em;
 		left: 0;
@@ -3204,14 +3204,24 @@
 
 	#banner {
 		background-attachment: scroll,							fixed;
-		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/Animation_Monday_6500agents.mp4");
-		background-position: top left,						center center;
+		background-position: top left,						 center;
 		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
-		color: #fff;
+		background-size: cover;
+		
 		padding: 12em 0 20em 0;
 		text-align: center;
+	}
+	#banner.home-banner {
+		background-image: url('images/home_banner.jpg');
+	}
+	
+	#banner.about-banner {
+		background-color:#212931;
+		background-image: url('images/banner-about.png');
+	}
+	
+	.contact-banner {
+		background-image: url('images/banner-contact.png');
 	}
 
 		#banner :last-child {
@@ -3227,6 +3237,7 @@
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
+			font-weight: bold;
 		}
 
 		#banner p {
