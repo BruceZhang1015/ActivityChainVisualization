@@ -2006,6 +2006,7 @@
 /* Container */
 
 	.container {
+		margin-top: 4em;
 		margin: 0 auto;
 		max-width: calc(100% - 5em);
 		width: 70em;
@@ -2973,13 +2974,13 @@
 	}
 
 	#header {
-		background-color: #2774ae;
+		background-color: #2774ae !important;
 		
 		cursor: default;
 		height: 4em;
 		left: 0;
 		line-height: 3.25em;
-		position: fixed;
+		position: sticky;
 		top: 0;
 		width: 100%;
 		z-index: 10000;
@@ -3008,7 +3009,7 @@
 			position: absolute;
 			right: 0.75em;
 			top: 0;
-			vertical-align: middle;
+			vertical-align: text-bottom;
 		}
 
 			#header nav > ul {
@@ -3032,6 +3033,8 @@
 						line-height: 1.95em;
 						padding: 0 1em;
 						border-radius: 6px;
+						color: #fff;
+						font-weight: 500;
 					}
 
 					#header nav > ul > li a:not(.button) {
@@ -3283,6 +3286,11 @@
 		padding: 4em 0;
 	}
 
+	.no-banner #main {
+		padding-top: 6rem;
+	}
+		
+
 		#main > header {
 			text-align: center;
 			margin: 0 0 3em 0;
@@ -3368,6 +3376,11 @@
 
 		body.is-preload #wrapper.fade-in:before {
 			opacity: 1;
+		}
+
+		body.no-banner {
+			opacity: 1;
+			padding-top: 6rem;
 		}
 
 		@media screen and (orientation: portrait) {
